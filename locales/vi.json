@@ -1,0 +1,19 @@
+{
+	"MESSAGE_DATA_NOT_FOUND": "Không tìm thấy dữ liệu",
+	"MESSAGE_NOT_PERMISSION": "Không có quyền thực hiện hành động này",
+	"CUSTOM_VALIDATE_GROUP_NAME_INVALID": "Tên của nhóm Chat không hợp lệ",
+	"VALIDATE_ANY_REQUIRED": "%PARAM_1% là bắt buộc",
+	"VALIDATE_ANY_ONLY": "%PARAM_1% phải nằm trong các giá trị sau: %PARAM_2%",
+	"VALIDATE_ARRAY_BASE": "%PARAM_1% phải là Array",
+	"VALIDATE_ARRAY_MIN": "%PARAM_1% chứa ít nhất %PARAM_2% phần tử",
+	"VALIDATE_ARRAY_MAX": "%PARAM_1% chứa tối đa %PARAM_2% phần tử",
+	"VALIDATE_STRING_BASE": "%PARAM_1% phải là String",
+	"VALIDATE_STRING_PATTERN_BASE": "%PARAM_1% không đúng định dạng",
+	"VALIDATE_STRING_EMPTY": "%PARAM_1% không được để trống",
+	"VALIDATE_STRING_MIN": "%PARAM_1% dài ít nhất %PARAM_2% ký tự",
+	"VALIDATE_STRING_MAX": "%PARAM_1% dài ít nhất %PARAM_2% ký tự",
+	"VALIDATE_OBJECT_BASE": "%PARAM_1% phải là Object",
+	"VALIDATE_OBJECT_MISSING": "Dữ liệu bị thiếu một số trường bắt buộc",
+	"VALIDATE_DATE_BASE": "%PARAM_1% phải là Datetime",
+	"VALIDATE_BOOLEAN_BASE": "%PARAM_1% phải là Boolean"
+}

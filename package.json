@@ -1,0 +1,42 @@
+{
+  "name": "mng_oneic",
+  "version": "1.0.0",
+  "description": "API manage One IC",
+  "main": "index.js",
+  "scripts": {
+    "init": "node ./script/init.js",
+    "start": "node server.js",
+    "debug": "nodemon server.js",
+    "debug:log": "DEBUG=* nodemon server.js"
+  },
+  "author": "ONEIC",
+  "license": "ISC",
+  "dependencies": {
+    "array-to-tree": "^3.3.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "convert-excel-to-json": "^1.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.5.0",
+    "i18n": "^0.13.2",
+    "image-size": "^0.9.7",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31",
+    "mongoose": "^5.8.1",
+    "mongoose-double": "0.0.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "redis": "^3.0.2",
+    "slugify": "^1.3.6",
+    "socket.io": "^3.0.5",
+    "validator": "^12.1.0"
+  }
+}

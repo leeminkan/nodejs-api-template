@@ -1,0 +1,43 @@
+version: "3.4"
+services:
+  redis:
+    build:
+      context: ./docker/redis
+      dockerfile: Dockerfile
+    container_name: redis
+    restart: unless-stopped
+    expose:
+      - 6379
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli","ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./public:/app/public
+    ports:
+      - 3240:3240
+    restart: unless-stopped
+    environment:
+      - REDIS_HOST=redis
+      - PORT=3240
+    depends_on:
+      - redis
+    networks:
+      - app-network
+    healthcheck:
+      test: wget --quiet --tries=1 --spider http://localhost:${PORT} || exit 1z
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
